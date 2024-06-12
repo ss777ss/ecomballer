@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор прибыли от дропшиппинга</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор прибыли</h1>
+        <form id="calculator-form">
+            <label for="selling-price">Цена продажи (руб):</label>
+            <input type="number" id="selling-price" name="selling-price" required><br>
+            
+            <label for="cost-of-goods">Себестоимость товара (руб):</label>
+            <input type="number" id="cost-of-goods" name="cost-of-goods" required><br>
+            
+            <label for="shipping-cost">Стоимость доставки (руб):</label>
+            <input type="number" id="shipping-cost" name="shipping-cost" required><br>
+            
+            <label for="fees-per-order">Сборы за заказ (руб):</label>
+            <input type="number" id="fees-per-order" name="fees-per-order" required><br>
+            
+            <label for="number-of-orders">Количество заказов:</label>
+            <input type="number" id="number-of-orders" name="number-of-orders" required><br>
+            
+            <label for="profit-margin">Маржа прибыли (%):</label>
+            <input type="number" id="profit-margin" name="profit-margin" required><br>
+            
+            <button type="submit">Рассчитать</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
